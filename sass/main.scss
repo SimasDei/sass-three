@@ -1,5 +1,2 @@
-$color-dark: #333;
-
-body {
-  background-color: $color-dark;
-}
+@import 'base';
+@import 'header';
