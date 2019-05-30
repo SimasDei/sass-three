@@ -1,0 +1,23 @@
+{
+  "name": "sass-three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimasDei/sass-three.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimasDei/sass-three/issues"
+  },
+  "homepage": "https://github.com/SimasDei/sass-three#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
