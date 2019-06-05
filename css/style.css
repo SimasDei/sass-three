@@ -170,4 +170,32 @@ body {
     height: 25rem;
     background-color: plum;
     border-radius: 0.5rem;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.2s all; }
+    .card__item--1 {
+      background-color: #414a4c; }
+    .card__item--2 {
+      background-color: #3b444b; }
+    .card__item--3 {
+      background-color: #353839; }
+    .card__item--4 {
+      background-color: #232b2b; }
+    .card__item:hover {
+      transform: scale(1.1) translateY(-5px);
+      background-color: #fff;
+      color: #0e1111; }
+  .card__header {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 3rem; }
+  .card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 3rem;
+    text-align: right; }
+  .card__icon {
+    font-size: 10rem;
+    margin-right: 1rem; }
