@@ -153,3 +153,21 @@ body {
     .nav__menu-link:hover {
       color: #0e1111;
       background-color: #fff; }
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5rem; }
+  .card__item {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    height: 25rem;
+    background-color: plum;
+    border-radius: 0.5rem;
+    cursor: pointer; }
