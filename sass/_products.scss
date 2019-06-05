@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
 
+  @include responsive(tab-port) {
+    padding: 0 1rem;
+  }
+
   &__container {
     width: 75%;
     height: 100%;
@@ -12,6 +16,10 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(12, 1fr);
     border: 0.3rem solid $color-white-transparent;
+
+    @include responsive(tab-port) {
+      width: 100%;
+    }
   }
 
   &__image {

@@ -6,13 +6,17 @@
   color: $color-white-transparent;
   margin-top: 5rem;
 
+  @include responsive(tab-land) {
+    flex-wrap: wrap;
+  }
+
   &__item {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40rem;
-    height: 25rem;
+    width: 35rem;
+    height: 22rem;
     background-color: plum;
     border-radius: $button-border-radius;
     cursor: pointer;
@@ -29,6 +33,15 @@
     }
     &--4 {
       background-color: $color-primary-light;
+    }
+
+    @include responsive(tab-land) {
+      flex-basis: 45%;
+      margin: 2rem;
+    }
+
+    @include responsive(phone) {
+      flex-basis: 75% !important;
     }
 
     &:hover {

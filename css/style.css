@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: inherit; }
 
+::selection {
+  color: #000;
+  background-color: #fff; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -34,6 +38,9 @@ body {
   background-size: cover;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+  @media only screen and (max-width: 900px) {
+    .header {
+      height: 70rem; } }
   .header__image {
     width: 15rem;
     height: 15rem;
@@ -43,12 +50,18 @@ body {
   .header__label {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
   .header__welcome {
     color: #fff;
     font-size: 7rem;
     display: block;
     margin-bottom: 10rem; }
+    @media only screen and (max-width: 600px) {
+      .header__welcome {
+        font-size: 5rem; } }
   .header__button-enter {
     font-family: Lato, sans-serif;
     border: none;
@@ -91,7 +104,8 @@ body {
   height: 3rem;
   width: auto;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 2; }
   .nav:hover .nav__icon, .nav:hover .nav__icon::before, .nav:hover .nav__icon::after {
     background-color: #fff; }
   .nav:hover .nav__icon::before {
@@ -173,13 +187,16 @@ body {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 5rem; }
+  @media only screen and (max-width: 1400px) {
+    .card {
+      flex-wrap: wrap; } }
   .card__item {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40rem;
-    height: 25rem;
+    width: 35rem;
+    height: 22rem;
     background-color: plum;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -192,6 +209,13 @@ body {
       background-color: #353839; }
     .card__item--4 {
       background-color: #232b2b; }
+    @media only screen and (max-width: 1400px) {
+      .card__item {
+        flex-basis: 45%;
+        margin: 2rem; } }
+    @media only screen and (max-width: 600px) {
+      .card__item {
+        flex-basis: 75% !important; } }
     .card__item:hover {
       transform: scale(1.1) translateY(-5px);
       background-color: #fff;
@@ -218,6 +242,9 @@ body {
   margin: 10rem 0;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 900px) {
+    .products {
+      padding: 0 1rem; } }
   .products__container {
     width: 75%;
     height: 100%;
@@ -225,6 +252,9 @@ body {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(12, 1fr);
     border: 0.3rem solid rgba(255, 255, 255, 0.8); }
+    @media only screen and (max-width: 900px) {
+      .products__container {
+        width: 100%; } }
   .products__image {
     width: 100%;
     height: 100%;
