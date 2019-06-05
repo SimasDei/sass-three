@@ -21,6 +21,19 @@ $font-primary: Lato, sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include responsive(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+  @include responsive(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @include responsive(phone) {
+    font-size: 43.75%; // 1rem = 7px
+  }
+  @include responsive(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 
 body {
